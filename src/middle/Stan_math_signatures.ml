@@ -1573,6 +1573,7 @@ let () =
     , AoS ) ;
   add_unqualified ("inv_fft", ReturnType UComplexVector, [UComplexVector], AoS) ;
   add_unqualified ("inv_fft2", ReturnType UComplexMatrix, [UComplexMatrix], AoS) ;
+  add_unqualified ("hypergeometric_2F1", ReturnType UReal, [UReal; UReal; UReal; UReal], SoA) ;
   add_unqualified ("inv_inc_beta", ReturnType UReal, [UReal; UReal; UReal], SoA) ;
   add_unqualified
     ("inv_wishart_cholesky_rng", ReturnType UMatrix, [UReal; UMatrix], AoS) ;
